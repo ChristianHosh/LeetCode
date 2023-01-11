@@ -1,12 +1,4 @@
-public class Main {
-
-    public static void main(String[] args) {
-        String roman = "MDLXX";
-        System.out.println(roman);
-        System.out.println(romanToInt(roman));
-
-    }
-
+public class RomanToInt {
     public static int romanToInt(String s) {
         if (s.length() < 1 || s.length() > 15) {
             System.out.println("Wrong Input");
@@ -62,7 +54,7 @@ public class Main {
             } else if (romans[i].equals("C")) {
                 decimal += 100;
             } else if (romans[i].equals("D")) {
-                    decimal += 500;
+                decimal += 500;
             } else if (romans[i].equals("M")) {
                 decimal += 1000;
             }
